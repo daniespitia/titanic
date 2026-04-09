@@ -1,0 +1,10 @@
+titanic = pd.read_csv("data/titanic.csv")
+titanic.isnull().sum()
+ans1a = 866
+ans2a = titanic['Sex'].value_counts()
+ans2b = 314
+ans3a = titanic['Age'].max()
+ans3b = titanic['Age'].min()
+ans4a = titanic['Fare'].mean()
+ans5a = titanic['Embarked'].sort_values(ascending = False)
+ans6a = titanic['Survived'].value_counts()[0]
